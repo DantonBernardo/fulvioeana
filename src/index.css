@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/assets/fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root{
+  --background: #1a1a1a;
+  --green: #9DE845;
+  --darker-green: #82c239;
+
+  --font-family-text: 'Bebas Neue';
+}
+
+body{
+  background-color: #1a1a1a
+}
+
+.hero-background {
+  @apply absolute inset-0 bg-fixed bg-center bg-cover bg-no-repeat brightness-30;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 800;
+}
+
+button{
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 800;
+}
+
+.hover-link {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--green);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+.hover-link:hover::after {
+  transform: scaleX(1);
+}

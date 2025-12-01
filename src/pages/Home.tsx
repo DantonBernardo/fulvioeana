@@ -5,7 +5,7 @@ export default function Home() {
   
   return (
     <div className="h-dvh w-full xl:flex">
-      <div className="absolute top-1/2 left-0 w-full h-1 bg-white z-20 xl:hidden"></div>
+      {/* <div className="absolute top-1/2 left-0 w-full h-1 bg-white z-20 xl:hidden"></div>
 
       <div className="
         absolute top-0 bottom-0
@@ -13,7 +13,7 @@ export default function Home() {
         w-1 bg-white
         hidden xl:block
         z-20
-      "></div>
+      "></div> */}
 
       {/* Fulvio */}
       <div onClick={() => navigate('/fulvio')} className="

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -5,15 +6,13 @@ export default function Home() {
   
   return (
     <div className="h-dvh w-full xl:flex">
-      {/* <div className="absolute top-1/2 left-0 w-full h-1 bg-white z-20 xl:hidden"></div>
-
-      <div className="
-        absolute top-0 bottom-0
-        left-1/2 -translate-x-1/2
-        w-1 bg-white
-        hidden xl:block
-        z-20
-      "></div> */}
+      <Helmet>
+        <title>Fulvio e Ana Maria</title>
+        <meta
+          name="description"
+          content="Barbearia e salão de beleza em Guarapuava: barbeiro, cabeleireiro, cabeleireira, manicure, massagista e cuidados para cabelo, barba e unhas."
+        />
+      </Helmet>
 
       {/* Fulvio */}
       <div onClick={() => navigate('/fulvio')} className="
@@ -34,7 +33,7 @@ export default function Home() {
         "></div>
 
         <h1 className="
-          relative z-10 
+          relative z-10
           text-white text-5xl
           md:text-7xl
         ">

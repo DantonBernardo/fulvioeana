@@ -53,7 +53,7 @@ export default function Hero({ index = 0 }) {
 
       <div className="z-10 w-full title">
         <h1 className="
-          text-white text-[3rem] leading-15 px-8
+          text-white text-[3rem] leading-15 px-8 font-title
           md:text-[6rem] md:leading-25 md:px-25
           xl:text-[6rem]
           font-light

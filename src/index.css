@@ -15,15 +15,11 @@
   --font-family-text: 'Bebas Neue';
 }
 
-body{
-  background-color: #1a1a1a
-}
-
 .hero-background {
   @apply absolute inset-0 bg-fixed bg-center bg-cover bg-no-repeat brightness-30;
 }
 
-h1 {
+.font-title {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 800;
 }

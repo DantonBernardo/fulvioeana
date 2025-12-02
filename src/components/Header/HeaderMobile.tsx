@@ -35,10 +35,10 @@ export default function HeaderMobile({ index = 0 }) {
 
   return(
     <>
-      <header className="flex justify-between px-8 py-2  items-center fixed w-full h-[10vh] top-0 left-0 z-20">
+      <header className="flex justify-between p-8  items-center fixed w-full h-[10vh] top-0 left-0 z-20">
         <img 
           src={logo[index]}
-          className="w-16 h-auto"
+          className="w-15 h-auto"
           alt="Logo Hera Terapia"
         />
         <button

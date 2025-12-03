@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import SEO from "../components/SEO";
 import Servicos from "../components/ServicosAna";
-import Feedback from "../components/Feedback";
+import FeedbackAna from "../components/Feedback/FeedbackAna";
 
 export default function Ana(){
   return (
@@ -15,7 +15,7 @@ export default function Ana(){
       <Header index={1} />
       <Hero index={1} />
       <Servicos />
-      <Feedback/>
+      <FeedbackAna />
 
       <div className="h-dvh bg-green-500"></div>
       

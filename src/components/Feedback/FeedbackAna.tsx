@@ -1,4 +1,4 @@
-import Slider from "./Slider";
+import Slider from "../Slider/SliderAna";
 
 export default function Feedback() {
   return (

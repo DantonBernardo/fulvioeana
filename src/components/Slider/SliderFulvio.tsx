@@ -1,5 +1,5 @@
 import { MdStar } from "react-icons/md";
-import { feedbacks } from "../constants";
+import { feedbacks } from "../../constants";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -37,7 +37,7 @@ export default function Slider() {
       {feedbacks.map((f, i) => (
         <SwiperSlide
           key={i}
-          className="flex items-center justify-center border-3 rounded-2xl"
+          className="flex items-center justify-center rounded-2xl bg-neutral-800"
         >
           <div className="flex flex-col justify-between h-full p-4">
             
@@ -51,7 +51,7 @@ export default function Slider() {
                 className="w-6 h-6 shrink-0"
               />
               
-              <h1 className="ml-2 font-bold text-lg truncate">
+              <h1 className="ml-2 font-bold text-lg truncate text-white">
                 {f.name}
               </h1>
             </div>
@@ -60,6 +60,7 @@ export default function Slider() {
             <p className="
               text-[0.9rem]
               my-2
+              text-white
             ">{f.description}</p>
 
             {/* Bottom */}

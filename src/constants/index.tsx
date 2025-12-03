@@ -31,80 +31,74 @@ const hero : Hero[] = [
 ];
 
 const feedbacks : Feedback[] = [
-  // {
-  //   id: 1,
-  //   name: 'Tiago Alves dos Santos',
-  //   description: 'Melhores profissionais! Sempre atenciosos, com um ambiente gostoso. Possui várias vantagens, recomendo pelo menos dar um pulinho lá para conhecer, não vai se arrepender!',
-  //   imagePath: '#',
-  // },
   {
-    id: 2,
+    id: 1,
     name: 'Renato Bine',
     description: 'Atendimento muito bom e profissionais qualificados! Lugar bem estruturado e com espaço para poder curtir até ser atendido.',
     imagePath: '#',
   },
   {
-    id: 3,
+    id: 2,
     name: 'Ana Lucia Santos',
     description: 'Super recomendo, o atendimento é de primeira e o local é bem aconchegante.Sem falar no profissionalismo.',
     imagePath: '#',
   },
   {
-    id: 4,
+    id: 3,
     name: 'Kailane de Fatima França',
     description: 'Profissionais super compotentes, atendem, todas as expectativas superam o cuidado com os detalhes das noivinhas.',
     imagePath: '#',
   },
   {
-    id: 6,
+    id: 4,
     name: 'Alice Carneiro',
     description: 'Único lugar em Guarapuava que conseguiu manter um corte que faço a anos. Não tem outro lugar que acerte cortar meu cabelo afro. Já fui em vários lugares, e só fizeram caminho de rato na minha cabeça',
     imagePath: '#',
   },
   {
-    id: 8,
+    id: 5,
     name: 'Danyele Santos',
     description: 'Ótimo atendimento. Serviço de qualidade com pessoas super simpáticas. Sem falar no ambiente que é muito agradável. Super recomendo.',
     imagePath: '#'
   },
   {
-    id: 9,
+    id: 6,
     name: 'Francisco Lopes Silva Junior',
     description: 'Local e atendimento excelente. Tudo pensado para o bem estar do cliente.',
     imagePath: '#'
   },
   {
-    id: 10,
+    id: 7,
     name: 'Vanessa Graciliano',
     description: 'Sou de Maringá e fiquei encantada com o atendimento do salão, a Manicure Suelen e a Cabeleireira Ana são super simpáticas e muito atenciosas. O ambiente é muito agradável e o preço justo. Super indico.',
     imagePath: '#'
   },
   {
-    id: 11,
+    id: 8,
     name: 'Isabelle Santos',
     description: 'Salão excelente, otimos profissionais , make e cabelo duraram a noite toda,fui muito bem atendida,me senti uma princesa haha',
     imagePath: '#'
   },
   {
-    id: 12,
+    id: 9,
     name: 'Arao antunes',
     description: 'Além do serviço ser de ótima qualidade, o ambiente é sensacional, com sala de jogos e chopp incrível!!',
     imagePath: '#'
   },
   {
-    id: 13,
+    id: 10,
     name: 'Alexandre A C Oliveira',
     description: 'Os proprietários têm um atendimento top, uma conserva alto astral... meu atendimento é com Bruno muitas qualidades e serviços de sucesso.',
     imagePath: '#'
   },
   {
-    id: 14,
+    id: 11,
     name: 'Joãozinho Camargo',
     description: 'Não recomendo. Consultei sobre um serviço e me informaram um valor de mais de mil reais. Ocorre que, a 500 metros dali, o Zé Cabeleireiro, fez por 200,00.',
     imagePath: '#'
   },
   {
-    id: 15,
+    id: 12,
     name: 'Roberto Borelli',
     description: 'Uma barbearia ótima, ambiente limpo e sem cabelos por todo o chão. Antendimento muito atencioso pelos funcionários e banheiro ótimo.',
     imagePath: '#'

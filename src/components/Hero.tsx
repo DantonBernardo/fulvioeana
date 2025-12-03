@@ -10,7 +10,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger);
 export default function Hero({ index = 0 }) {
   const heroRef = useRef(null);
 
-  const data = hero[index]; // ← pega o hero correspondente
+  const data = hero[index];
 
   useGSAP(async () => {
     // espera as fontes carregarem

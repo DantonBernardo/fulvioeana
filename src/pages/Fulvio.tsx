@@ -1,23 +1,20 @@
-import { Helmet } from "react-helmet-async";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import SEO from "../components/SEO";
+import Services from "../components/Servicos";
 
-export default function Fulvio(){
+export default function Fulvio() {
   return (
     <div className="bg-[#1a1a1a]">
-      <Helmet>
-        <title>Barbearia Fulvio — Cortes, Barba e Estilo</title>
-        <meta
-          name="description"
-          content="Barbearia especializada em cortes masculinos, barba e cuidados pessoais em Guarapuava - PR. Profissionalismo e estilo para você."
-        />
-        <meta property="og:title" content="Barbearia Fulvio — Cortes e Barba" />
-        <meta property="og:description" content="Cortes masculinos, barba e cuidados pessoais em Guarapuava - PR." />
-      </Helmet>
+      <SEO
+        title="Barbearia Fulvio — Cortes, Barba e Estilo"
+        description="Barbearia especializada em cortes masculinos, barba e cuidados pessoais em Guarapuava - PR. Profissionalismo e estilo para você."
+      />
 
       <Header index={0} />
       <Hero index={0} />
-      <div className="h-dvh"></div>
+      <Services />
+      <div className="h-dvh bg-red-500"></div>
     </div>
   );
 };

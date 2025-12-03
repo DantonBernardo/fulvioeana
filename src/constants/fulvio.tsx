@@ -1,6 +1,14 @@
+// Types
 import type { Service } from "../types/Service";
 import type { Social } from "../types/Social";
 import type { Faq } from "../types/Faq";
+
+// Images
+import barbaImg from '../assets/images/servicos/barba.png';
+import sobrancelhaImg from '../assets/images/servicos/sobrancelha.png';
+import corteImg from '../assets/images/servicos/corte.png';
+import kidsImg from '../assets/images/servicos/kids.png';
+import maquiagemImg from '../assets/images/servicos/maquiagem.png';
 
 const heroTitle : string[] = [
   "Seu estilo merece respeito"
@@ -14,42 +22,27 @@ const services : Service[] = [
   {
     id: 1,
     title: 'Barba',
-    cover: '#',
+    cover: barbaImg,
   },
   {
     id: 2,
-    title: 'Corte',
-    cover: '#',
+    title: 'Kids',
+    cover: kidsImg,
   },
   {
     id: 3,
-    title: 'Sobrancelha',
-    cover: '#',
+    title: 'Corte',
+    cover: corteImg,
   },
   {
     id: 4,
-    title: 'Kids',
-    cover: '#',
+    title: 'Sobrancelha',
+    cover: sobrancelhaImg,
   },
   {
     id: 5,
-    title: 'Manicure',
-    cover: '#',
-  },
-  {
-    id: 6,
-    title: 'Tintura',
-    cover: '#',
-  },
-  {
-    id: 7,
     title: 'Maquiagem',
-    cover: '#',
-  },
-  {
-    id: 8,
-    title: 'Feminino',
-    cover: '#',
+    cover: maquiagemImg,
   },
 ];
 

@@ -1,18 +1,15 @@
-import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
+import SEO from '../components/SEO';
 
 export default function Home() {
   const navigate = useNavigate();
   
   return (
     <div className="h-dvh w-full xl:flex">
-      <Helmet>
-        <title>Fulvio e Ana Maria</title>
-        <meta
-          name="description"
-          content="Barbearia e salão de beleza em Guarapuava: barbeiro, cabeleireiro, cabeleireira, manicure, massagista e cuidados para cabelo, barba e unhas."
-        />
-      </Helmet>
+      <SEO 
+        title="Fulvio e Ana Maria" 
+        description="Barbearia e salão de beleza em Guarapuava: barbeiro, cabeleireiro, cabeleireira, manicure, massagista e cuidados para cabelo, barba e unhas."
+      />
 
       {/* Fulvio */}
       <div onClick={() => navigate('/fulvio')} className="
@@ -34,7 +31,8 @@ export default function Home() {
 
         <h1 className="
           relative z-10
-          text-white text-5xl
+          mb-2
+          text-white text-5xl barbearia-title
           md:text-7xl
         ">
           Barbearia
@@ -42,9 +40,9 @@ export default function Home() {
 
         <h2 className="
           relative z-10 
-          text-white
+          text-white text-[1.2rem]
         ">
-          Para cavalheiros
+          Para Cavalheiros
         </h2>
       </div>
 
@@ -68,14 +66,18 @@ export default function Home() {
 
         <h1 className="
           relative z-10 
-          text-white text-5xl
+          mb-2
+          text-white text-5xl salao-title
           md:text-7xl
         ">
           Salão de beleza
         </h1>
 
-        <h2 className="relative z-10 text-white">
-          Estética feminina
+        <h2 className="
+          relative z-10 
+          text-white text-[1.2rem]
+        ">
+          Estética Feminina
         </h2>
       </div>
     </div>

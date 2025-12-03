@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
-import { useRef } from "react"; 
+import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { hero } from "../constants";
 
@@ -12,7 +12,10 @@ export default function Hero({ index = 0 }) {
 
   const data = hero[index]; // ← pega o hero correspondente
 
-  useGSAP(() => {
+  useGSAP(async () => {
+    // espera as fontes carregarem
+    await document.fonts.ready;
+
     const heroSplit = new SplitText(".title", { type: "lines" });
 
     gsap.from(heroSplit.lines, {
@@ -39,6 +42,7 @@ export default function Hero({ index = 0 }) {
       }
     );
   }, { scope: heroRef });
+
 
   return (
     <section

@@ -1,6 +1,13 @@
+// Types
 import type { Faq } from "../types/Faq";
 import type { Service } from "../types/Service";
 import type { Social } from "../types/Social";
+
+// Images
+import cabeloImg from '../assets/images/servicos/cabelo.png';
+import maquiagemImg from '../assets/images/servicos/maquiagem.png';
+import sobrancelhaImg from '../assets/images/servicos/sobrancelha.png';
+import masculinoImg from '../assets/images/servicos/barba.png';
 
 const heroTitle : string[] = [
   "Sua beleza merece destaque"
@@ -10,46 +17,31 @@ const heroSubTitle : string[] = [
   "Do cuidado ao estilo, o salão pensado em cada detalhe"
 ]
 
-const services : Service[] = [
+const services: Service[] = [
   {
     id: 1,
-    title: 'Manicure',
-    cover: '#',
+    title: 'Maquiagem',
+    cover: maquiagemImg,
   },
   {
     id: 2,
-    title: 'Cabelo',
-    cover: '#',
+    title: 'sobrancelha',
+    cover: sobrancelhaImg,
   },
   {
     id: 3,
-    title: 'Tintura',
-    cover: '#',
+    title: 'cabelo',
+    cover: cabeloImg,
   },
   {
     id: 4,
-    title: 'Maquiage',
-    cover: '#',
+    title: 'Maquiagem',
+    cover: maquiagemImg,
   },
   {
     id: 5,
-    title: 'Kids',
-    cover: '#',
-  },
-  {
-    id: 6,
-    title: 'Sobrancelha',
-    cover: '#',
-  },
-  {
-    id: 7,
-    title: 'Massagem',
-    cover: '#',
-  },
-  {
-    id: 8,
-    title: 'Masculino',
-    cover: '#',
+    title: 'Estética Masculina',
+    cover: masculinoImg,
   },
 ];
 

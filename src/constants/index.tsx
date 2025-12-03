@@ -127,22 +127,22 @@ const navLinks : NavLink[] = [
   {
     id: 1,
     name: 'Serviços',
-    href: '#servicos',
+    href: 'servicos',
   },
   {
     id: 2,
     name: 'Feedbacks',
-    href: '#feedbacks',
+    href: 'feedbacks',
   },
   {
     id: 3,
     name: 'Nosso App',
-    href: '#app',
+    href: 'app',
   },
   {
     id: 4,
     name: 'FAQ',
-    href: '#faq',
+    href: 'faq',
   },
 ]
 

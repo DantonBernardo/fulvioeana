@@ -3,6 +3,7 @@ import { MdClose } from "react-icons/md";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
+import { Link } from 'react-scroll';
 
 type MobileNavProps = {
   isOpen: boolean;
@@ -62,12 +63,15 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
       <ul className="navLinks flex flex-col justify-center items-center h-full">
         {navLinks.map((link) => (
           <li key={link.href} className="p-4">
-            <a 
-              href={link.href}
-              className="text-white text-4xl font-light"
+            <Link
+              onClick={onClose}
+              to={link.href}
+              smooth={true}
+              duration={600}
+              className="text-white text-4xl font-light cursor-pointer"
             >
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

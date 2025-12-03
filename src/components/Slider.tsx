@@ -9,7 +9,7 @@ import { Autoplay } from "swiper/modules";
 export default function Slider() {
   return (
     <Swiper
-      className= "h-[35vh] p-4 2xl:h-[25vh]"
+      className= "h-[35vh] p-4 2xl:h-[40vh]"
       modules={[Autoplay]}
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000 }}

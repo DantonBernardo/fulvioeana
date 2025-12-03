@@ -1,5 +1,3 @@
-import { Helmet } from "react-helmet-async";
-
 interface SEOProps {
   title: string,
   description: string,
@@ -7,7 +5,7 @@ interface SEOProps {
 
 export default function SEO ({ title, description }: SEOProps){
   return(
-    <Helmet>
+    <>
       <title>{title}</title>
 
       {/* meta principais */}
@@ -22,6 +20,6 @@ export default function SEO ({ title, description }: SEOProps){
       {/* opcional: canonical / robots */}
       {/* <link rel="canonical" href={window.location.href} /> */}
       <meta name="robots" content="index, follow" />
-    </Helmet>
+    </>
   );
 };

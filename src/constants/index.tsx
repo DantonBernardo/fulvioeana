@@ -31,12 +31,12 @@ const hero : Hero[] = [
 ];
 
 const feedbacks : Feedback[] = [
-  {
-    id: 1,
-    name: 'Tiago Alves dos Santos',
-    description: 'Melhores profissionais! Sempre atenciosos, com um ambiente gostoso. Possui várias vantagens, recomendo pelo menos dar um pulinho lá para conhecer, não vai se arrepender!',
-    imagePath: '#',
-  },
+  // {
+  //   id: 1,
+  //   name: 'Tiago Alves dos Santos',
+  //   description: 'Melhores profissionais! Sempre atenciosos, com um ambiente gostoso. Possui várias vantagens, recomendo pelo menos dar um pulinho lá para conhecer, não vai se arrepender!',
+  //   imagePath: '#',
+  // },
   {
     id: 2,
     name: 'Renato Bine',
@@ -56,22 +56,10 @@ const feedbacks : Feedback[] = [
     imagePath: '#',
   },
   {
-    id: 5,
-    name: 'Marcos Roberto Marcellino',
-    description: 'Ambiente que nos deixa tranquilos para corte e barba. Além do atendimento de primeira feito pelos barbeiros e pelos donos do negócio, Ana e Fulvio. Sempre voltarei a tomar aquele chopp e sobre papo agradável. Agradeço imensamente pelo atendimento impecável. Super satisfeito. Indico a todos que querem cortar cabelo e barba da família toda. Sucesso ao negócio! Abcs, Marcos',
-    imagePath: '#',
-  },
-  {
     id: 6,
     name: 'Alice Carneiro',
     description: 'Único lugar em Guarapuava que conseguiu manter um corte que faço a anos. Não tem outro lugar que acerte cortar meu cabelo afro. Já fui em vários lugares, e só fizeram caminho de rato na minha cabeça',
     imagePath: '#',
-  },
-  {
-    id: 7,
-    name: 'Jean Gustavo',
-    description: 'Tive problemas com outro cabeleireiro, cheguei aqui contei o que ouve e fui surpreendido. Qualidade excepcional, atendimento ótimo, cabeleireiros muito competentes e comunicativos. Concerteza o melhor da região e não é o mais caro.',
-    imagePath: '#'
   },
   {
     id: 8,

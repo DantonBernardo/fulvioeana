@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import SEO from "../components/SEO";
-import Services from "../components/Servicos";
+import Servicos from "../components/ServicosFulvio";
 
 export default function Fulvio() {
   return (
@@ -13,7 +13,7 @@ export default function Fulvio() {
 
       <Header index={0} />
       <Hero index={0} />
-      <Services />
+      <Servicos />
       <div className="h-dvh bg-red-500"></div>
     </div>
   );

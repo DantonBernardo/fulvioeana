@@ -1,12 +1,44 @@
-import barba from '../assets/images/servicos/barba.png';
-import corte from '../assets/images/servicos/corte.png';
-import kids from '../assets/images/servicos/kids.png';
-import sobrancelha from '../assets/images/servicos/sobrancelha.png';
-import maquiagem from '../assets/images/servicos/maquiagem.png';
+import { useNavigate } from 'react-router-dom';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import SplitText from 'gsap/SplitText';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Images
+import barba from '../assets/images/servicos/fulvio/barba.png';
+import corte from '../assets/images/servicos/fulvio/corte.png';
+import kids from '../assets/images/servicos/fulvio/kids.png';
+import sobrancelha from '../assets/images/servicos/fulvio/sobrancelha.png';
+import maquiagem from '../assets/images/servicos/fulvio/maquiagem.png';
+
+gsap.registerPlugin(SplitText, ScrollTrigger);
 
 export default function Servicos() {
+  const navigate = useNavigate();
+
+  useGSAP(() => {
+    const titleSplit = SplitText.create('#servicos h1', {
+    type: 'words'
+    })
+
+    const scrollTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#servicos',
+      start: 'top center'
+    }
+    })
+    
+    scrollTimeline
+    .from(titleSplit.words, {
+      opacity: 0, duration: 1, yPercent: 100, ease: 'expo.out', stagger: 0.02
+    })
+    .from('.test > div', {
+      opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.04,
+    }, '-=0.5')
+  })
+
   return (
-    <section id="servicos" className="h-auto px-8 my-10 md:px-25">
+    <section id="servicos" className="h-auto px-8 mt-5 mb-15 2xl:px-60">
       <h1 className="
         text-center text-white text-[2.5rem] px-8 py-4
         md:text-[5rem]
@@ -19,6 +51,7 @@ export default function Servicos() {
       <div className='
         flex flex-col gap-5
         lg:flex-row
+        test
       '>
         <div className='
           flex flex-col gap-5
@@ -34,7 +67,10 @@ export default function Servicos() {
             overflow-hidden
             text-center content-center
           ">
-            <div className="absolute inset-0 bg-black/50 2xl:bg-black/40"></div>
+            <div className="
+              absolute inset-0 bg-black/50 2xl:bg-black/35
+              hover:bg-black/10 transition-all duration-400
+            "></div>
 
             <h2 className="
               font-title
@@ -60,7 +96,10 @@ export default function Servicos() {
               overflow-hidden
               text-center content-center
             ">
-              <div className="absolute inset-0 bg-black/50 2xl:bg-black/40"></div>
+              <div className="
+                absolute inset-0 bg-black/50 2xl:bg-black/35
+                hover:bg-black/10 transition-all duration-400
+              "></div>
 
               <h2 className="
                 font-title
@@ -82,7 +121,10 @@ export default function Servicos() {
               overflow-hidden
               text-center content-center
             ">
-              <div className="absolute inset-0 bg-black/50 2xl:bg-black/40"></div>
+              <div className="
+                absolute inset-0 bg-black/50 2xl:bg-black/35
+                hover:bg-black/10 transition-all duration-400
+              "></div>
 
               <h2 className="
                 font-title
@@ -111,7 +153,10 @@ export default function Servicos() {
             overflow-hidden
             text-center content-center
           ">
-            <div className="absolute inset-0 bg-black/50 2xl:bg-black/40"></div>
+            <div className="
+              absolute inset-0 bg-black/50 2xl:bg-black/35
+              hover:bg-black/10 transition-all duration-400
+            "></div>
 
             <h2 className="
               font-title
@@ -125,7 +170,10 @@ export default function Servicos() {
           </div>
 
           {/* Card 5 */}
-          <div style={{ backgroundImage: `url(${maquiagem})` }} className="
+          <div
+          style={{ backgroundImage: `url(${maquiagem})` }}
+          onClick={() => navigate('/ana')}
+          className="
             relative
             w-full h-[20vh]
             2xl:h-[45vh]
@@ -133,8 +181,12 @@ export default function Servicos() {
             bg-center bg-cover bg-no-repeat
             overflow-hidden
             text-center content-center
+            cursor-pointer
           ">
-            <div className="absolute inset-0 bg-black/50 2xl:bg-black/40"></div>
+            <div className="
+              absolute inset-0 bg-black/50 2xl:bg-black/35
+              hover:bg-black/10 transition-all duration-400
+            "></div>
 
             <h2 className="
               font-title
@@ -148,11 +200,20 @@ export default function Servicos() {
             <h4 className="
               relative z-10
               text-white text-sm
-              font-semibold
+              font-semibold salao-title
               xl:text-4xl
             ">
               Ana Maria
             </h4>
+            <p className='
+              bottom-0 absolute justify-center flex 
+              w-full 
+              mb-3 
+              text-white text-semibold text-[1rem]
+              uppercase
+            '>
+                Clique para saber mais
+            </p>
           </div>
         </div>
       </div>

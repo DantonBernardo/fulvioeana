@@ -4,11 +4,11 @@ import type { Social } from "../types/Social";
 import type { Faq } from "../types/Faq";
 
 // Images
-import barbaImg from '../assets/images/servicos/barba.png';
-import sobrancelhaImg from '../assets/images/servicos/sobrancelha.png';
-import corteImg from '../assets/images/servicos/corte.png';
-import kidsImg from '../assets/images/servicos/kids.png';
-import maquiagemImg from '../assets/images/servicos/maquiagem.png';
+import barbaImg from '../assets/images/servicos/fulvio/barba.png';
+import sobrancelhaImg from '../assets/images/servicos/fulvio/sobrancelha.png';
+import corteImg from '../assets/images/servicos/fulvio/corte.png';
+import kidsImg from '../assets/images/servicos/fulvio/kids.png';
+import maquiagemImg from '../assets/images/servicos/fulvio/maquiagem.png';
 
 const heroTitle : string[] = [
   "Seu estilo merece respeito"
@@ -47,7 +47,7 @@ const services : Service[] = [
 ];
 
 const about : string[] = [
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  "Na Fúlvio Barbershop, <b>tradição</b> e <b>inovação</b> caminham juntas. O espaço surgiu há muitos anos como referência em atendimento, e hoje se reinventa com um conceito <b>moderno</b>, <b>profissional</b> e alinhado às tendências atuais do universo masculino.<br/><br/>Nossa equipe, formada por <b>barbeiros e especialistas</b>, oferece <b>cortes</b>, <b>barba</b> e <b>cuidados premium</b> para homens de todas as idades, sempre com atenção aos detalhes, técnica e estilo.<br/><br/>Aqui, a experiência vai além do visual: é sobre <b>conforto</b>, <b>excelência</b> e <b>confiança</b>. Um ambiente pensado para receber desde crianças até clientes que nos acompanham há gerações."
 ];
 
 const faq : Faq[] = [

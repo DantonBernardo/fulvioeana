@@ -3,7 +3,8 @@ import Hero from "../components/Hero";
 import SEO from "../components/SEO";
 import Servicos from "../components/ServicosFulvio";
 import FeedbackFulvio from "../components/Feedback/FeedbackFulvio";
-import OurApp from "../components/OurApp";
+import OurApp from "../components/OurApp/OurAppFulvio";
+import About from "../components/About";
 
 export default function Fulvio() {
   return (
@@ -18,7 +19,9 @@ export default function Fulvio() {
       <Servicos />
       <FeedbackFulvio />
       <OurApp />
-      <div className="h-dvh bg-red-500"></div>
+      <About index={0} />
+
+      <div className="h-dvh bg-green-500"></div>
     </div>
   );
 };

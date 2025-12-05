@@ -1,13 +1,32 @@
 import LogoPreta from '../assets/images/footer/logoPreta.png';
-import { socials } from '../constants/ana';
 
 // Icons
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
-export default function Footer() {
-  return (
-    <footer className="w-full px-8 py-20 2xl:px-60 grid gap-5 lg:flex lg:justify-center">
+export default function Footer({ index = 0 }) {
+  const bgColor = index === 0 ? '#F2F5F7' : '#1a1a1a';
+  const textColor = index === 0 ? 'black' : 'white';
+  const links = index === 0 ? [
+    'https://wa.me/554288073102',
+    'https://www.facebook.com/fulvioeanacabeleireiros',
+    'https://www.instagram.com/fulviobarbershop/',
+  ] : [
+    'https://wa.me/554299426434',
+    'https://www.facebook.com/fulvioeanacabeleireiros',
+    'https://www.instagram.com/salaoanamaria_/',
+  ];
 
+  return (
+    <footer
+      style={{ backgroundColor: bgColor, color: textColor }}
+      className="
+        w-full 
+        px-8 py-20 
+        grid gap-5 
+        lg:flex lg:justify-center
+        2xl:px-60 
+      "
+    >
       
       {/* Logo */}
       <div 
@@ -71,7 +90,7 @@ export default function Footer() {
                     text-[#25D366]
                     underline
                   '
-                  href='https://wa.me/554299426434'
+                  href={ links[0] }
                   target='_blank'
                 >
                   <FaWhatsapp
@@ -88,7 +107,7 @@ export default function Footer() {
                     text-[#1877F2]
                     underline
                   '
-                  href='https://www.facebook.com/fulvioeanacabeleireiros'
+                  href={ links[1] }
                   target='_blank'
                 >
                   <FaFacebook
@@ -105,7 +124,7 @@ export default function Footer() {
                     text-[#E1306C]
                     underline
                   '
-                  href='https://www.instagram.com/salaoanamaria_/'
+                  href={ links[2] }
                   target='_blank'
                 >
                   <FaInstagram

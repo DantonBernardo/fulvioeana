@@ -13,23 +13,27 @@ export default function About({index = 0}){
     <section 
       id="about"
       style={{ backgroundColor: bgColor, color: textColor }}
-      className="px-8 py-20 2xl:px-60"
+      className="
+        px-8 
+        2xl:px-60
+      "
     >
       <h1 className="
         font-title font-bold 
-        text-[2.5rem] 
+        text-[2.5rem]
+        sm:mb-3
       ">
         Quem somos?
       </h1>
 
       <div className="
-        w-full flex flex-col sm:gap-5 md:gap-3
+        w-full flex flex-col sm:gap-5 md:gap-10
         sm:flex-row
       ">
         {/* Text */}
         <div className="
           w-full
-          sm:w-6/10 sm:items-center sm:flex
+          sm:w-6/10
         ">
           <p 
             dangerouslySetInnerHTML={{ __html: aboutText }} 

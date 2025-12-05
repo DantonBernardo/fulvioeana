@@ -26,7 +26,7 @@ export default function HeaderDesktop({ index = 0 }) {
       
       <img
         src={logo[index]}
-        className="w-25 h-auto logo"
+        className="w-20 h-auto logo"
         alt="Logo"
       />
 

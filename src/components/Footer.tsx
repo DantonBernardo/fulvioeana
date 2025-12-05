@@ -22,11 +22,11 @@ export default function Footer({ index = 0 }) {
     <footer
       style={{ backgroundColor: bgColor, color: textColor }}
       className="
-        w-full 
-        px-8 py-20 
-        grid gap-5 
+        w-full
+        px-8 py-10
+        grid gap-5
         lg:flex lg:justify-center
-        2xl:px-60 
+        2xl:px-40
       "
     >
       
@@ -35,7 +35,7 @@ export default function Footer({ index = 0 }) {
         className="
           w-full
           px-[10%]
-          md:flex 
+          md:flex
           md:justify-center
           lg:px-0
           lg:justify-start lg:w-1/4
@@ -102,7 +102,7 @@ export default function Footer({ index = 0 }) {
                     size={24} 
                     className='mr-1.5'  
                   />
-                  Whatsapp
+                  Whatsapp &#128279;
                 </a>
                 <a
                   className='
@@ -119,7 +119,7 @@ export default function Footer({ index = 0 }) {
                     size={24} 
                     className='mr-1.5'  
                   />
-                  Facebook
+                  Facebook &#128279;
                 </a>
                 <a
                   className='
@@ -136,7 +136,7 @@ export default function Footer({ index = 0 }) {
                     size={24} 
                     className='mr-1.5'  
                   />
-                  Instagram
+                  Instagram &#128279;
                 </a>
               </div>
           </div>

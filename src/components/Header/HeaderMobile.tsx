@@ -39,7 +39,7 @@ export default function HeaderMobile({ index = 0 }) {
         <img 
           src={logo[index]}
           className="w-15 h-auto"
-          alt="Logo Hera Terapia"
+          alt="Logo"
         />
         <button
           className="cursor-pointer border-none"

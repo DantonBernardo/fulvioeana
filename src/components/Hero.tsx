@@ -4,6 +4,7 @@ import { SplitText } from "gsap/SplitText";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { hero } from "../constants";
+import { Link } from "react-scroll";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -48,7 +49,12 @@ export default function Hero({ index = 0 }) {
     <section
       id="hero"
       ref={heroRef}
-      className="h-dvh w-full pt-[10vh] flex text-left items-center"
+      className="
+        h-dvh w-full 
+        pt-[10vh] 
+        flex text-left 
+        items-center
+      "
     >
       <div
         className="hero-background bg-cover bg-center"
@@ -73,7 +79,16 @@ export default function Hero({ index = 0 }) {
           {data.subtitle}
         </h2>
 
-        <a href="#" className="px-8 md:px-25">
+        <Link 
+          to='app'
+          smooth={true}
+          duration={600}
+          href="app"
+          className="
+            px-8 
+            md:px-25
+          "
+        >
           <button className="
             cursor-pointer text-white uppercase text-[1.8rem]
             mt-8 px-8 py-4 font-bold rounded-full
@@ -82,7 +97,7 @@ export default function Hero({ index = 0 }) {
           ">
             Agendar agora
           </button>
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -16,9 +16,7 @@ export default function SEO ({ title, description }: SEOProps){
       <meta property="og:description" content={description} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-
-      {/* opcional: canonical / robots */}
-      {/* <link rel="canonical" href={window.location.href} /> */}
+      
       <meta name="robots" content="index, follow" />
     </>
   );

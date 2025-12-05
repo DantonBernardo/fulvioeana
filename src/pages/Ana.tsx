@@ -1,8 +1,7 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import SEO from "../components/SEO";
-import Servicos from "../components/ServicosAna";
-import FeedbackAna from "../components/Feedback/FeedbackAna";
+import Servicos from "../components/Servicos";
 import OurApp from "../components/OurApp/OurAppAna";
 import About from "../components/About";
 import Footer from "../components/Footer";
@@ -17,8 +16,7 @@ export default function Ana(){
 
       <Header index={1} />
       <Hero index={1} />
-      <Servicos />
-      <FeedbackAna />
+      <Servicos index={1}/>
       <OurApp />
       <About index={1} />
       <Footer index={1}/>

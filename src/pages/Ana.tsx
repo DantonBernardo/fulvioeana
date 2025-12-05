@@ -5,6 +5,7 @@ import Servicos from "../components/ServicosAna";
 import FeedbackAna from "../components/Feedback/FeedbackAna";
 import OurApp from "../components/OurApp/OurAppAna";
 import About from "../components/About";
+import Footer from "../components/Footer";
 
 export default function Ana(){
   return (
@@ -20,6 +21,7 @@ export default function Ana(){
       <FeedbackAna />
       <OurApp />
       <About index={1} />
+      <Footer />
       
       <div className="h-dvh bg-green-500"></div>
       

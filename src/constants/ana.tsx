@@ -61,16 +61,16 @@ const socials : Social[] = [
   {
     id: 1,
     name: 'Whatsapp',
-    href: '#'
+    href: '#',
   },
   {
     id: 2,
-    name: 'Instagram',
+    name: 'Facebook',
     href: '#'
   },
   {
     id: 3,
-    name: 'Facebook',
+    name: 'Instagram',
     href: '#'
   },
 ]

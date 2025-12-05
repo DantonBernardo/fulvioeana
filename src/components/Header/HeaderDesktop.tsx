@@ -37,6 +37,7 @@ export default function HeaderDesktop({ index = 0 }) {
               to={link.href}
               smooth={true}
               duration={600}
+              href={`#${link.href}`}
               className="text-white text-2xl font-light pb-1 hover-link nav-link cursor-pointer"
             >
               {link.name}

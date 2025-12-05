@@ -1,11 +1,13 @@
 import LogoPreta from '../assets/images/footer/logoPreta.png';
+import LogoBranca from '../assets/images/footer/LogoBranca.png';
 
 // Icons
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer({ index = 0 }) {
-  const bgColor = index === 0 ? '#F2F5F7' : '#1a1a1a';
-  const textColor = index === 0 ? 'black' : 'white';
+  const bgColor = index === 0 ? '#1a1a1a' : '#F2F5F7';
+  const textColor = index === 0 ? 'white' : 'black';
+  const logo = index === 0 ? LogoBranca : LogoPreta;
   const links = index === 0 ? [
     'https://wa.me/554288073102',
     'https://www.facebook.com/fulvioeanacabeleireiros',
@@ -31,13 +33,15 @@ export default function Footer({ index = 0 }) {
       {/* Logo */}
       <div 
         className="
-          w-full 
+          w-full
+          px-[10%]
           md:flex 
           md:justify-center
+          lg:px-0
           lg:justify-start lg:w-1/4
         ">
         <img 
-          src={LogoPreta}
+          src={logo}
           alt='Logo Fulvio e Ana Maria'
           className='w-full md:w-3/4 object-contain'
         />
@@ -53,11 +57,12 @@ export default function Footer({ index = 0 }) {
           "
         >
           
-          <div className="col-span-5 w-full lg:col-span-1 max-w-[250px]">
+          <div className="col-span-5 w-full lg:col-span-1 max-w-[250px] 2xl:max-w-[40%]">
             <h1
               className='
                 font-title 
                 text-[2rem]
+                2xl:text-justify
               '
             >
               Endereço
@@ -157,6 +162,7 @@ export default function Footer({ index = 0 }) {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Fulvio Barbershop e Ana Maria Estética"
               />
             </div>
           </div>

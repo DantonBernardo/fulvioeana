@@ -49,6 +49,7 @@ export default function Slider() {
               <img
                 src="/assets/images/profileIcon.svg"
                 className="w-6 h-6 shrink-0"
+                alt="Ícone de usuário"
               />
               
               <h1 className="ml-2 font-bold text-lg truncate text-white">

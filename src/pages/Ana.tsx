@@ -21,9 +21,7 @@ export default function Ana(){
       <FeedbackAna />
       <OurApp />
       <About index={1} />
-      <Footer />
-      
-      <div className="h-dvh bg-green-500"></div>
+      <Footer index={1}/>
       
     </div>
   );

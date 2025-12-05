@@ -197,14 +197,14 @@ export default function Servicos() {
             ">
               Estética Feminina
             </h2>
-            <h4 className="
+            <h3 className="
               relative z-10
               text-white text-sm
               font-semibold salao-title
               xl:text-4xl
             ">
               Ana Maria
-            </h4>
+            </h3>
             <p className='
               bottom-0 absolute justify-center flex 
               w-full 

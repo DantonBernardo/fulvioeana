@@ -5,6 +5,7 @@ import Servicos from "../components/ServicosFulvio";
 import FeedbackFulvio from "../components/Feedback/FeedbackFulvio";
 import OurApp from "../components/OurApp/OurAppFulvio";
 import About from "../components/About";
+import Footer from "../components/Footer";
 
 export default function Fulvio() {
   return (
@@ -20,8 +21,8 @@ export default function Fulvio() {
       <FeedbackFulvio />
       <OurApp />
       <About index={0} />
-
-      <div className="h-dvh bg-green-500"></div>
+      <Footer index={0}/>
+      
     </div>
   );
 };

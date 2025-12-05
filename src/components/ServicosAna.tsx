@@ -196,7 +196,7 @@ export default function Servicos() {
             ">
               Estética Masculina
             </h2>
-            <h4 className="
+            <h3 className="
               relative z-10
               text-white text-sm
               font-semibold barbearia-title
@@ -204,7 +204,7 @@ export default function Servicos() {
               uppercase
             ">
               Fulvio Barbershop
-            </h4>
+            </h3>
             <p className='
               bottom-0 absolute justify-center flex 
               w-full 

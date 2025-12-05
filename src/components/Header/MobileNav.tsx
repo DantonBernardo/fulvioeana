@@ -46,7 +46,6 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
       <button
         onClick={onClose}
         className="absolute flex text-white justify-end w-full pl-8 pr-8 pt-2 pb-2 h-[10vh] items-center cursor-pointer"
-        aria-label="Fechar menu de navegação"
       >
         <MdClose size={38}/>
       </button>
@@ -68,6 +67,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
               to={link.href}
               smooth={true}
               duration={600}
+              href={`#${link.href}`}
               className="text-white text-4xl font-light cursor-pointer"
             >
               {link.name}

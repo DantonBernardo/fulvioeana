@@ -41,6 +41,7 @@ export default function Home() {
         <h2 className="
           relative z-10 
           text-white text-[1.2rem]
+          font-p
         ">
           Para Cavalheiros
         </h2>
@@ -67,15 +68,16 @@ export default function Home() {
         <h1 className="
           relative z-10 
           mb-2
-          text-white text-5xl salao-title
-          md:text-7xl
+          text-white text-5xl
+          md:text-7xl salao-title
         ">
-          Salão de beleza
+          Salão de Beleza
         </h1>
 
         <h2 className="
           relative z-10 
           text-white text-[1.2rem]
+          font-p
         ">
           Estética Feminina
         </h2>

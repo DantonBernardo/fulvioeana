@@ -81,7 +81,8 @@ export default function Servicos({ index = 0}) {
       id="servicos" 
       className="
         h-auto 
-        px-6 py-5
+        px-6 pt-2 pb-5
+        md:pt-5
         2xl:px-40
       "
       style={{ color: textColor }}

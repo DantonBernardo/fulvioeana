@@ -15,7 +15,7 @@ const hero : Hero[] = [
     subtitle: (
       <>
         Da barba ao corte,<br/>
-        a barbearia feita para <span>você</span>
+        a barbearia feita para <b>você</b>
       </>
     )
   },
@@ -25,7 +25,7 @@ const hero : Hero[] = [
     subtitle: (
       <>
         Do cuidado ao estilo,<br/>
-        o salão pensado em cada <span>detalhe</span>
+        o salão pensado em cada <b>detalhe</b>
       </>
     )
   },

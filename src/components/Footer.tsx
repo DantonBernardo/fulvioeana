@@ -23,46 +23,43 @@ export default function Footer({ index = 0 }) {
       style={{ backgroundColor: bgColor, color: textColor }}
       className="
         w-full
-        px-8 py-10
-        grid gap-5
+        px-6 py-10
+        grid gap-3
         lg:flex lg:justify-center
         2xl:px-40
       "
     >
-      
-      {/* Logo */}
-      <div 
-        className="
-          w-full
-          px-[10%]
-          md:flex
-          md:justify-center
-          lg:px-0
-          lg:justify-start lg:w-1/4
-        ">
-        <img 
-          src={logo}
-          alt='Logo Fulvio e Ana Maria'
-          className='w-full md:w-3/4 object-contain'
-        />
-      </div>
 
-      <div>
+      <div
+        className='
+          order-1
+          lg:order-2
+          lg:w-3/4
+        '
+      >
         <div 
           className="
-            grid grid-cols-10 gap-2 
+            grid grid-cols-10 gap-5
             justify-between 
             lg:grid-cols-3
             lg:justify-end
           "
         >
           
-          <div className="col-span-5 w-full lg:col-span-1 max-w-[250px] 2xl:max-w-[40%]">
+          <div className="
+            col-span-5
+            w-full
+            lg:col-span-1
+            max-w-[75%]
+            "
+          >
             <h1
               className='
                 font-title 
-                text-[2rem]
-                2xl:text-justify
+                text-[1.4rem]
+                sm:text-[1.8rem]
+                md:text-[2.2rem]
+                lg:text-[2rem]
               '
             >
               Endereço
@@ -70,7 +67,10 @@ export default function Footer({ index = 0 }) {
             <p
               className='
                 font-p
-                text-md
+                text-[.7rem]
+                sm:text-[1rem]
+                md:text-[1.2rem]
+                lg:text-[1.2rem]
               '
             >
               📌 Guarapuava, Paraná, Brg. Rocha, 2132, Centro
@@ -81,26 +81,43 @@ export default function Footer({ index = 0 }) {
             <h1
               className='
                 font-title 
-                text-[2rem]
+                text-[1.4rem]
+                sm:text-[1.8rem]
+                md:text-[2.2rem]
+                lg:text-[2rem]
               '
             >
               Contato
             </h1>
-              <div className='grid gap-2.5'>
+              <div 
+                className='
+                  grid gap-2.5
+                  sm:gap-3.5
+                '
+              >
                 <a
                   className='
                     font-semibold 
                     flex 
                     items-center 
                     text-[#25D366]
+                    text-[.7rem]
                     underline
+                    sm:text-[1rem]
+                    md:text-[1.2rem]
+                    lg:text-[1.2rem]
                   '
                   href={ links[0] }
                   target='_blank'
                 >
                   <FaWhatsapp
-                    size={24} 
-                    className='mr-1.5'  
+                    className='
+                      mr-1.5
+                      text-[1rem]
+                      sm:text-[1.5rem]
+                      md:text-[1.8rem]
+                      lg:text-[1.6rem]
+                    '  
                   />
                   Whatsapp &#128279;
                 </a>
@@ -110,14 +127,23 @@ export default function Footer({ index = 0 }) {
                     flex 
                     items-center 
                     text-[#1877F2]
+                    text-[.7rem]
                     underline
+                    sm:text-[1rem]
+                    md:text-[1.2rem]
+                    lg:text-[1.2rem]
                   '
                   href={ links[1] }
                   target='_blank'
                 >
                   <FaFacebook
-                    size={24} 
-                    className='mr-1.5'  
+                    className='
+                      mr-1.5
+                      text-[1rem]
+                      sm:text-[1.5rem]
+                      md:text-[1.8rem]
+                      lg:text-[1.6rem]
+                    '  
                   />
                   Facebook &#128279;
                 </a>
@@ -127,14 +153,23 @@ export default function Footer({ index = 0 }) {
                     flex 
                     items-center 
                     text-[#E1306C]
+                    text-[.7rem]
                     underline
+                    sm:text-[1rem]
+                    md:text-[1.2rem]
+                    lg:text-[1.2rem]
                   '
                   href={ links[2] }
                   target='_blank'
                 >
                   <FaInstagram
-                    size={24} 
-                    className='mr-1.5'  
+                    className='
+                      mr-1.5
+                      text-[1rem]
+                      sm:text-[1.5rem]
+                      md:text-[1.8rem]
+                      lg:text-[1.6rem]
+                    '  
                   />
                   Instagram &#128279;
                 </a>
@@ -145,7 +180,10 @@ export default function Footer({ index = 0 }) {
             <h1
               className='
                 font-title 
-                text-[2rem]
+                text-[1.4rem]
+                sm:text-[1.8rem]
+                md:text-[2.2rem]
+                lg:text-[2rem]
               '
             >
               Localização
@@ -168,6 +206,28 @@ export default function Footer({ index = 0 }) {
           </div>
 
         </div>
+      </div>
+
+      {/* Logo */}
+      <div 
+        className="
+          w-full
+          flex
+          justify-center
+          order-2
+          lg:order-1
+          lg:justify-start lg:items-center
+          lg:w-1/4
+        ">
+        <img 
+          src={logo}
+          alt='Logo Fulvio e Ana Maria'
+          className='
+            w-1/2
+            object-contain
+            lg:w-3/4
+          '
+        />
       </div>
     </footer>
   );

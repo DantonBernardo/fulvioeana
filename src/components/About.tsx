@@ -14,14 +14,21 @@ export default function About({index = 0}){
       id="about"
       style={{ backgroundColor: bgColor, color: textColor }}
       className="
-        px-8 
-        2xl:px-60
+        px-6 py-6
+        md:py-10
+        2xl:px-40
       "
     >
       <h1 className="
-        font-title font-bold 
-        text-[2.5rem]
-        sm:mb-3
+        font-title
+        text-[1.8rem]
+        mb-2
+        font-title
+        sm:text-[3rem] sm:mb-3
+        md:text-[3.5rem]
+        lg:text-[4rem]
+        xl:text-[4.2rem]
+        2xl:text-[5rem]
       ">
         Quem somos?
       </h1>
@@ -39,9 +46,11 @@ export default function About({index = 0}){
             dangerouslySetInnerHTML={{ __html: aboutText }} 
             className="
               font-p font-thin 
-              text-[2vw]
-              sm:text-[1.8vw]
-              2xl:text-[1.2vw]
+              text-[3vw]
+              sm:text-[.9rem]
+              md:text-[1rem]
+              lg:text-[1.5rem]
+              xl:text-[1.7rem]
             "/>
         </div>
 
@@ -53,11 +62,10 @@ export default function About({index = 0}){
             h-[35vh]
             bg-cover bg-center
             mt-5 
-            rounded-2xl shadow-2xl
+            rounded-2xl
             sm:mt-0
             sm:h-[35vh] sm:w-4/10
             lg:h-[60vh]
-            2xl:h-[50vh]
         "></div>
 
       </div>

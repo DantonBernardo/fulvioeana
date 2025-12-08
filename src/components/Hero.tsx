@@ -62,18 +62,32 @@ export default function Hero({ index = 0 }) {
       />
 
       <div className="z-10 w-full title">
-        <h1 className="
-          text-white text-[3rem] leading-15 px-8 font-title
-          md:text-[6rem] md:leading-25 md:px-25
-          xl:text-[6rem]
-          font-light
-        ">
+        <h1 
+          className="
+            text-white text-[2rem]
+            leading-10
+            font-title
+            px-6
+            sm:text-
+            md:text-[6rem]
+            md:leading-25
+            md:px-25
+            lg:text-
+            xl:text-[6rem]
+            2xl:text-
+            font-light
+          "
+        >
           <span className="font-bold uppercase">{data.title}</span>
         </h1>
 
         <h2 className="
-          text-white text-2xl font-light leading-10 px-8
-          md:text-4xl md:leading-12 md:px-25 md:my-4
+          text-white text-sm
+          font-light leading-6
+          px-6
+          md:text-4xl 
+          md:leading-12 
+          md:px-25 md:my-4
           xl:text-5xl xl:leading-15
         ">
           {data.subtitle}
@@ -85,15 +99,23 @@ export default function Hero({ index = 0 }) {
           duration={600}
           href="app"
           className="
-            px-8 
+            px-6
             md:px-25
           "
         >
           <button className="
-            cursor-pointer text-white uppercase text-[1.8rem]
-            mt-8 px-8 py-4 font-bold rounded-full
-            bg-(--green) hover:bg-(--darker-green)
-            transition-all md:text-[2.4rem]
+            hero-button
+            cursor-pointer 
+            text-white
+            uppercase 
+            text-[1rem]
+            mt-8 px-5 py-2
+            font-bold 
+            rounded-full
+            bg-(--green) 
+            hover:bg-(--darker-green) transition-all
+            sm:text-[1.5rem]
+            md:text-[2.4rem] md:px-6 md:py-4
           ">
             Agendar agora
           </button>

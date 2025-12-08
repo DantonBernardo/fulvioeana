@@ -35,10 +35,27 @@ export default function HeaderMobile({ index = 0 }) {
 
   return(
     <>
-      <header className="flex justify-between p-8  items-center fixed w-full h-[10vh] top-0 left-0 z-20">
+      <header 
+        className="
+          flex
+          justify-between
+          p-6
+          items-center
+          fixed
+          w-full
+          h-[10vh]
+          top-0 
+          left-0
+          z-20
+        "
+      >
         <img 
           src={logo[index]}
-          className="w-15 h-auto"
+          className="
+            w-[11%]
+            sm:w-15
+            h-auto
+          "
           alt="Logo"
         />
         <button
@@ -46,7 +63,13 @@ export default function HeaderMobile({ index = 0 }) {
           onClick={() => openNav()}
           aria-label="Abrir menu de navegação"
         >
-          <MdMenu size={38} className="text-white"/>
+          <MdMenu
+            className="
+              text-white text-[25px]
+              sm:text-[30px]
+              2xl:text-[60px]
+            "
+          />
         </button>
 
       </header>

@@ -81,17 +81,21 @@ export default function Servicos({ index = 0}) {
       id="servicos" 
       className="
         h-auto 
-        px-8
-        2xl:px-60
+        px-6 py-5
+        2xl:px-40
       "
       style={{ color: textColor }}
       >
       <h1 
         className="
-          text-center text-[2.5rem] px-8
-          md:text-[5rem]
-          xl:text-[6rem]
+          text-center text-[1.8rem]
+          mb-2
           font-title
+          sm:text-[3rem]
+          md:text-[3.5rem]
+          lg:text-[4rem]
+          xl:text-[4.2rem]
+          2xl:text-[5rem]
         "
       >
         Nossos serviços
@@ -99,14 +103,14 @@ export default function Servicos({ index = 0}) {
       
       <div 
         className='
-          flex flex-col gap-5
+          flex flex-col gap-3
           lg:flex-row
           test
         '
       >
         <div 
           className='
-            flex flex-col gap-5
+            flex flex-col gap-3
             lg:w-[50%]
           '
         >
@@ -117,7 +121,7 @@ export default function Servicos({ index = 0}) {
               relative
               w-full h-[20vh]
               2xl:h-[50vh]
-              rounded-2xl
+              rounded-xl
               bg-center bg-cover bg-no-repeat
               overflow-hidden
               text-center content-center
@@ -138,8 +142,10 @@ export default function Servicos({ index = 0}) {
                 ${fontText}
                 font-semibold
                 relative z-10
-                text-white text-2xl
-                xl:text-4xl
+                text-white text-[1.2rem]
+                sm:text-[2rem]
+                md:text-[2.2rem]
+                xl:text-[3rem]
               `}
             >
               {cardName[0]}
@@ -147,14 +153,14 @@ export default function Servicos({ index = 0}) {
           </div>
 
           {/* Cards 2 e 3 */}
-          <div className="flex flex-row gap-5">
+          <div className="flex flex-row gap-3">
 
             <div style={{ backgroundImage: `url(${images[1]})` }} className="
               relative
               w-full h-[10vh]
               md:h-[20vh]
               2xl:h-[30vh]
-              rounded-2xl
+              rounded-xl
               bg-center bg-cover bg-no-repeat
               overflow-hidden
               text-center content-center
@@ -168,8 +174,11 @@ export default function Servicos({ index = 0}) {
                 className={`
                   ${fontText}
                   relative z-10
-                  text-white text-2xl
                   font-semibold
+                  text-white text-[1.2rem]
+                  sm:text-[2rem]
+                  md:text-[2.2rem]
+                  xl:text-[3rem]
                 `}
               >
                 {cardName[1]}
@@ -181,7 +190,7 @@ export default function Servicos({ index = 0}) {
               w-full h-[10vh]
               md:h-[20vh]
               2xl:h-[30vh]
-              rounded-2xl
+              rounded-xl
               bg-center bg-cover bg-no-repeat
               overflow-hidden
               text-center content-center
@@ -195,8 +204,11 @@ export default function Servicos({ index = 0}) {
                 className={`
                   ${fontText}
                   relative z-10
-                  text-white text-2xl
                   font-semibold
+                  text-white text-[1.2rem]
+                  sm:text-[2rem]
+                  md:text-[2.2rem]
+                  xl:text-[3rem]
                 `}
               >
                 {cardName[2]}
@@ -207,7 +219,7 @@ export default function Servicos({ index = 0}) {
         </div>
 
         <div className='
-          flex flex-col gap-5
+          flex flex-col gap-3
           lg:w-[50%]
         '>
           {/* Card 4 */}
@@ -215,7 +227,7 @@ export default function Servicos({ index = 0}) {
             relative
             w-full h-[20vh]
             2xl:h-[35vh]
-            rounded-2xl
+            rounded-xl
             bg-center bg-cover bg-no-repeat
             overflow-hidden
             text-center content-center
@@ -229,9 +241,10 @@ export default function Servicos({ index = 0}) {
               className={`
                 ${fontText}
                 relative z-10
-                text-white text-2xl
-                font-semibold
-                xl:text-4xl
+               text-white text-[1.2rem]
+                sm:text-[2rem]
+                md:text-[2.2rem]
+                xl:text-[3rem]
               `}
             >
               {cardName[3]}
@@ -246,7 +259,7 @@ export default function Servicos({ index = 0}) {
             relative
             w-full h-[20vh]
             2xl:h-[45vh]
-            rounded-2xl
+            rounded-xl
             bg-center bg-cover bg-no-repeat
             overflow-hidden
             text-center content-center
@@ -261,9 +274,11 @@ export default function Servicos({ index = 0}) {
               className={`
                 ${fontText}
                 relative z-10
-                text-white text-2xl
                 font-semibold
-                xl:text-4xl
+                text-white text-[1.2rem]
+                sm:text-[2rem]
+                md:text-[2.2rem]
+                xl:text-[3rem]
               `}
             >
               {cardName[4]}
@@ -272,10 +287,13 @@ export default function Servicos({ index = 0}) {
               className={`
                 ${subtitleFont}
                 relative z-10
-                text-white text-sm
+                text-white text-[.5rem]
                 font-semibold
-                xl:text-2xl
                 uppercase
+                hidden
+                sm:block sm:text-[1rem]
+                md:text-[1.2rem]
+                xl:text-[1.5rem]
               `}
             >
               {
@@ -285,9 +303,11 @@ export default function Servicos({ index = 0}) {
             <p className='
               bottom-0 absolute justify-center flex 
               w-full 
-              mb-3 
-              text-white text-semibold text-[1rem]
+              mb-3
               uppercase
+              text-white text-semibold text-[.5rem]
+              sm:text-[.8rem]
+              md:text-[1rem]
             '>
                 Clique para saber mais
             </p>

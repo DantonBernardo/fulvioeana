@@ -6,7 +6,7 @@ import Servicos from "../components/Servicos";
 import OurApp from "../components/OurApp";
 import About from "../components/About";
 import Footer from "../components/Footer";
-import Feedback from "../components/Feedback";
+import Feedback from "../components/Feedback/Feedback";
 
 export default function Ana(){
   return (

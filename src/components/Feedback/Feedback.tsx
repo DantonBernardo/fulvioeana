@@ -1,4 +1,4 @@
-import { feedbacks } from "../constants";
+import { feedbacks } from "../../constants";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -9,12 +9,19 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useState } from "react";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 export default function Feedback({ index = 0 }){
   const textColor = index === 0 ? 'white' : 'black';
   const cardBgColor = index === 0 ? '#202020' : '#f8f8ff'
+
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   useGSAP(async() => {
     await document.fonts.ready;
@@ -112,7 +119,8 @@ export default function Feedback({ index = 0 }){
           carousel-mask
           "
         >
-        <Slider {...settings}>
+        {isClient ? (
+          <Slider {...settings}>
           {feedbacks.map((f) => (
             <div
               className="
@@ -216,6 +224,11 @@ export default function Feedback({ index = 0 }){
             </div>
           ))}
         </Slider>
+        ) : (
+          <div className="h-[150px] flex items-center justify-center opacity-0">
+            {/* placeholder invisível só pra não quebrar layout */}
+          </div>
+        )}
       </div>
     </section>
   );

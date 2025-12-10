@@ -1,5 +1,5 @@
-import LogoPreta from '../assets/images/footer/logoPreta.png';
-import LogoBranca from '../assets/images/footer/LogoBranca.png';
+import LogoPreta from '../assets/images/footer/logoPreta.webp';
+import LogoBranca from '../assets/images/footer/LogoBranca.webp';
 
 // Icons
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";

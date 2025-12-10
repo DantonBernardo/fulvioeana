@@ -1,6 +1,6 @@
 import { about } from "../constants"
-import fulvioPhoto from '../assets/images/about/fulvio.png';
-import anaPhoto from '../assets/images/about/ana.png';
+import fulvioPhoto from '../assets/images/about/fulvio.webp';
+import anaPhoto from '../assets/images/about/ana.webp';
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";

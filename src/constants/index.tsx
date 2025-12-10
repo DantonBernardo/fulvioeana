@@ -11,7 +11,7 @@ const logo = [
 
 const hero : Hero[] = [
   {
-    bg: '/assets/images/bg-fulvio.png',
+    bg: '/assets/images/bg-fulvio.webp',
     title: "Seu estilo merece respeito",
     subtitle: (
       <>
@@ -21,7 +21,7 @@ const hero : Hero[] = [
     )
   },
   {
-    bg: '/assets/images/bg-ana.png',
+    bg: '/assets/images/bg-ana.webp',
     title: "Sua beleza merece destaque",
     subtitle: (
       <>

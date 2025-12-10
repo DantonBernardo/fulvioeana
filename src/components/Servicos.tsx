@@ -6,18 +6,18 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Images
 // Comum
-import barba from '../assets/images/servicos/barba.png';
-import maquiagem from '../assets/images/servicos/maquiagem.png';
+import barba from '../assets/images/servicos/barba.webp';
+import maquiagem from '../assets/images/servicos/maquiagem.webp';
 
 // Fulvio
-import corte from '../assets/images/servicos/corte.png';
-import kids from '../assets/images/servicos/kids.png';
-import sobrancelhaH from '../assets/images/servicos/sobrancelhaH.png';
+import corte from '../assets/images/servicos/corte.webp';
+import kids from '../assets/images/servicos/kids.webp';
+import sobrancelhaH from '../assets/images/servicos/sobrancelhaH.webp';
 
 // Ana
-import cabelo from '../assets/images/servicos/cabelo.png';
-import manicure from '../assets/images/servicos/manicure.png';
-import sobrancelhaM from '../assets/images/servicos/sobrancelhaM.png';
+import cabelo from '../assets/images/servicos/cabelo.webp';
+import manicure from '../assets/images/servicos/manicure.webp';
+import sobrancelhaM from '../assets/images/servicos/sobrancelhaM.webp';
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 

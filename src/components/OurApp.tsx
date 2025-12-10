@@ -1,7 +1,7 @@
-import AppImgPreta from "../assets/images/app/0.png";
-import AppImgBranca from "../assets/images/app/1.png";
-import PlayStore from "../assets/images/app/googleplay.png";
-import AppleStore from "../assets/images/app/appstore.png";
+import AppImgPreta from "../assets/images/app/0.webp";
+import AppImgBranca from "../assets/images/app/1.webp";
+import PlayStore from "../assets/images/app/googleplay.webp";
+import AppleStore from "../assets/images/app/appstore.webp";
 import { useRef } from "react";
 
 import { gsap } from "gsap";

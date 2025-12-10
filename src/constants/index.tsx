@@ -2,6 +2,7 @@ import type { Faq } from "../types/Faq";
 import type { Feedback } from "../types/Feedback";
 import type { Hero } from "../types/Hero";
 import type { NavLink } from "../types/NavLink";
+import type { About } from "../types/About";
 
 const logo = [
   '/assets/images/fulvio.svg',
@@ -31,76 +32,90 @@ const hero : Hero[] = [
   },
 ];
 
+const about : About[] = [
+  {
+    text: (
+      <>
+        Na Fúlvio Barbershop, <b>tradição</b> e <b>inovação</b> caminham juntas. O espaço surgiu há muitos anos como referência em atendimento, e hoje se reinventa com um conceito <b>moderno</b>, <b>profissional</b> e alinhado às tendências atuais do universo masculino.
+        <br/>
+
+        <span className="block h-2"></span>
+        
+        Nossa equipe, formada por <b>barbeiros e especialistas</b>, oferece <b>cortes</b>, <b>barba</b> e <b>cuidados premium</b> para homens de todas as idades, sempre com atenção aos detalhes, técnica e estilo.
+        <br/>
+
+        <span className="block h-2"></span>
+        Aqui, a experiência vai além do visual: é sobre <b>conforto</b>, <b>excelência</b> e <b>confiança</b>. Um ambiente pensado para receber desde crianças até clientes que nos acompanham há gerações.
+      </>
+    )
+  },
+  {
+    text: (
+      <>
+        Aqui na Ana Maria Cabelo & Estética, a beleza é tratada com <b>técnica</b>, <b>sensibilidade</b> e <b>excelência</b>. O espaço feminino evoluiu ao longo dos anos e hoje oferece um atendimento <b>moderno</b>, <b>acolhedor</b> e totalmente personalizado para cada cliente.<br/><br/>Trabalhamos com <b>cabelo</b>, <b>maquiagem</b>, <b>design de sobrancelhas</b>, <b>estética</b> e cuidados completos de beleza — sempre com atenção aos detalhes, produtos de alta performance e um padrão de qualidade que acompanha as tendências sem perder a essência profissional.<br/><br/>Aqui, a experiência é sobre <b>bem-estar</b>, <b>confiança</b> e se sentir ainda mais bonita, seja para o dia a dia ou para momentos realmente especiais.
+      </>
+    )
+  }
+]
+
 const feedbacks : Feedback[] = [
   {
     id: 1,
-    name: 'Renato Bine',
+    name: 'Renato B.',
     description: 'Atendimento muito bom e profissionais qualificados! Lugar bem estruturado e com espaço para poder curtir até ser atendido.',
     imagePath: '#',
   },
   {
     id: 2,
-    name: 'Ana Lucia Santos',
+    name: 'Ana L.',
     description: 'Super recomendo, o atendimento é de primeira e o local é bem aconchegante.Sem falar no profissionalismo.',
     imagePath: '#',
   },
   {
     id: 3,
-    name: 'Kailane de Fatima França',
+    name: 'Kailane de F.',
     description: 'Profissionais super compotentes, atendem, todas as expectativas superam o cuidado com os detalhes das noivinhas.',
     imagePath: '#',
   },
   {
     id: 4,
-    name: 'Alice Carneiro',
+    name: 'Alice C.',
     description: 'Único lugar em Guarapuava que conseguiu manter um corte que faço a anos. Não tem outro lugar que acerte cortar meu cabelo afro. Já fui em vários lugares, e só fizeram caminho de rato na minha cabeça',
     imagePath: '#',
   },
   {
     id: 5,
-    name: 'Danyele Santos',
+    name: 'Danyele S.',
     description: 'Ótimo atendimento. Serviço de qualidade com pessoas super simpáticas. Sem falar no ambiente que é muito agradável. Super recomendo.',
     imagePath: '#'
   },
   {
     id: 6,
-    name: 'Francisco Lopes Silva Junior',
+    name: 'Francisco L.',
     description: 'Local e atendimento excelente. Tudo pensado para o bem estar do cliente.',
     imagePath: '#'
   },
   {
-    id: 7,
-    name: 'Vanessa Graciliano',
-    description: 'Sou de Maringá e fiquei encantada com o atendimento do salão, a Manicure Suelen e a Cabeleireira Ana são super simpáticas e muito atenciosas. O ambiente é muito agradável e o preço justo. Super indico.',
-    imagePath: '#'
-  },
-  {
     id: 8,
-    name: 'Isabelle Santos',
+    name: 'Isabelle S.',
     description: 'Salão excelente, otimos profissionais , make e cabelo duraram a noite toda,fui muito bem atendida,me senti uma princesa haha',
     imagePath: '#'
   },
   {
     id: 9,
-    name: 'Arao antunes',
+    name: 'Arao A.',
     description: 'Além do serviço ser de ótima qualidade, o ambiente é sensacional, com sala de jogos e chopp incrível!!',
     imagePath: '#'
   },
   {
     id: 10,
-    name: 'Alexandre A C Oliveira',
+    name: 'Alexandre A.',
     description: 'Os proprietários têm um atendimento top, uma conserva alto astral... meu atendimento é com Bruno muitas qualidades e serviços de sucesso.',
     imagePath: '#'
   },
   {
     id: 11,
-    name: 'Joãozinho Camargo',
-    description: 'Não recomendo. Consultei sobre um serviço e me informaram um valor de mais de mil reais. Ocorre que, a 500 metros dali, o Zé Cabeleireiro, fez por 200,00.',
-    imagePath: '#'
-  },
-  {
-    id: 12,
-    name: 'Roberto Borelli',
+    name: 'Roberto B.',
     description: 'Uma barbearia ótima, ambiente limpo e sem cabelos por todo o chão. Antendimento muito atencioso pelos funcionários e banheiro ótimo.',
     imagePath: '#'
   },
@@ -169,6 +184,7 @@ const faq : Faq[] = [
 
 export {
   logo,
+  about,
   hero,
   feedbacks,
   navLinks,

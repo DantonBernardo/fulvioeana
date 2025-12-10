@@ -2,10 +2,11 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import SEO from "../components/SEO";
 import Servicos from "../components/Servicos";
+import FAQ from '../components/Faq';
 import OurApp from "../components/OurApp";
 import About from "../components/About";
-import Faq from '../components/Faq';
 import Footer from "../components/Footer";
+import Feedback from "../components/Feedback";
 
 export default function Fulvio() {
   return (
@@ -18,9 +19,10 @@ export default function Fulvio() {
       <Header index={0} />
       <Hero index={0} />
       <Servicos index={0}/>
+      <Feedback index={0}/>
       <OurApp index={0}/>
       <About index={0} />
-      <Faq index={0}/>
+      <FAQ index={0}/>
       <Footer index={0}/>
       
     </div>

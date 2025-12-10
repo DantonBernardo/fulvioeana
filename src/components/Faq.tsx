@@ -2,6 +2,12 @@ import { useState } from "react";
 import { faq } from "../constants";
 import { FaArrowRight } from "react-icons/fa";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(SplitText);
+
 export default function FAQ({ index = 0 }) {
   const bgColor = index === 0 ? "#F2F5F7" : "#1a1a1a";
   const textColor = index === 0 ? "black" : "white";
@@ -14,8 +20,36 @@ export default function FAQ({ index = 0 }) {
     setOpenIndex(openIndex === i ? null : i);
   };
 
+  useGSAP(async() => {
+    const faqTitleSplit = new SplitText('#faq h1', { type: 'words'});
+
+    const scrollTimeLine = gsap.timeline({
+      scrollTrigger:{
+        trigger: '#faq',
+        start: 'top 50%'
+      }
+    })
+
+    scrollTimeLine
+      .from(faqTitleSplit.words, {
+        yPercent: 50,
+        opacity: 0,
+        duration: 2,
+        ease: 'expo.out',
+        stagger: 0.04
+      })
+      .from("#question-block", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        ease: "power3.out",
+      }, '<')
+
+  });
+
   return (
     <section
+      id="faq"
       style={{ backgroundColor: bgColor, color: textColor }}
       className="
         w-full px-6 py-10
@@ -36,7 +70,12 @@ export default function FAQ({ index = 0 }) {
         Perguntas Frequentes
       </h1>
 
-      <div className="grid gap-2">
+      <div
+        id="question-block"
+        className="
+          grid gap-2
+        "
+      >
         {faq.map((faq, i) => (
           <div
             key={i}

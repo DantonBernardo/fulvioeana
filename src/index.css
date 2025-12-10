@@ -75,3 +75,9 @@
 .hover-link:hover::after {
   transform: scaleX(1);
 }
+
+@media (max-width: 1850px){
+  .about-paragraph{
+    font-size: 2rem;
+  }
+}

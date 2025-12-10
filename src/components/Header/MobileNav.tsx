@@ -45,30 +45,62 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
     <nav className="mobile-nav fixed z-50 w-full h-dvh bg-(--green)/96">
       <button
         onClick={onClose}
-        className="absolute flex text-white justify-end w-full pl-8 pr-8 pt-2 pb-2 h-[10vh] items-center cursor-pointer"
+        className="
+          absolute flex
+          text-white
+          justify-end
+          w-full h[10vh]
+          p-6
+          items-center
+          cursor-pointer
+          text-[25px]
+          sm:text-[30px]
+        "
       >
-        <MdClose size={38}/>
+        <MdClose/>
       </button>
       
       <div className="contact-button absolute w-full flex flex-col justify-center items-center bottom-0">
         <a
           href="#"
-          className="mb-20 inline-block border-2 border-white rounded-full text-white px-6 py-3 font-medium uppercase text-md"
+          className="
+            mb-8
+            inline-block
+            border-2
+            border-white
+            rounded-full
+            text-white
+            px-6 py-3
+            text-[.8rem]
+            uppercase
+            text-md"
         >
           Agende seu horário
         </a>
       </div>
 
-      <ul className="navLinks flex flex-col justify-center items-center h-full">
+      <ul 
+        className="
+          navLinks
+          flex flex-col
+          justify-center
+          items-center
+          h-full
+        "
+      >
         {navLinks.map((link) => (
-          <li key={link.href} className="p-4">
+          <li key={link.href} className="p-2">
             <Link
               onClick={onClose}
               to={link.href}
               smooth={true}
               duration={600}
               href={`#${link.href}`}
-              className="text-white text-4xl font-light cursor-pointer"
+              className="
+                text-white text-[1.2rem]
+                font-light
+                cursor-pointer
+              "
             >
               {link.name}
             </Link>

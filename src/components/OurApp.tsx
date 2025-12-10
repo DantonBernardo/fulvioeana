@@ -2,22 +2,82 @@ import AppImgPreta from "../assets/images/app/0.png";
 import AppImgBranca from "../assets/images/app/1.png";
 import PlayStore from "../assets/images/app/googleplay.png";
 import AppleStore from "../assets/images/app/appstore.png";
+import { useRef } from "react";
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 export default function OurApp({ index = 0 }) {
   const appImg = index === 0 ? AppImgPreta : AppImgBranca;
-  const textColor = index === 0 ? 'white' : 'black'
+  const textColor = index === 0 ? 'white' : 'black';
+
+  const ourAppRef = useRef(null);
+
+  // Animations
+  useGSAP(async() => {
+    await document.fonts.ready;
+
+    const titleSplit = new SplitText("#app h1", {
+      type: "words"
+    })
+
+    const paragraphSplit = SplitText.create('#app h2', {
+      type: 'words'
+    })
+
+    const finalTextSplit = SplitText.create('#app h3', {
+      type: 'words'
+    })
+
+    const scrollTimeLine = gsap.timeline({
+      scrollTrigger:{
+        trigger: '#app',
+        start: 'top 80%'
+      }
+    })
+
+    scrollTimeLine
+      .from(titleSplit.words, {
+        opacity: 0,
+        yPercent: 25,
+        duration: 1,
+        ease: 'expo.out',
+        stagger: 0.02 
+      })
+      .from(paragraphSplit.words, {
+        opacity: 0,
+        yPercent: 25,
+        duration: 1,
+        ease: 'expo.out',
+        stagger: 0.02 
+      }, "-=0.4")
+      .from(finalTextSplit.words, {
+        opacity: 0,
+        yPercent: 25,
+        duration: 1,
+        ease: 'expo.out',
+        stagger: 0.02
+      }, "<")
+
+  }, { scope: ourAppRef});
 
   return (
     <section
       id="app"
+      ref={ourAppRef}
       style={{ color: textColor }}
       className="
         px-6 pt-5 mb-10
         2xl:px-40
       "
     >
-      <h1 
+      <h1
         className="
+          ourAppTitle
           text-center text-[1.8rem]
           mb-2
           font-title
@@ -31,14 +91,16 @@ export default function OurApp({ index = 0 }) {
         Conheça nosso app!
       </h1>
 
-      <div 
+      <div
         className="
+          ourAppContent
           sm:flex
           "
         >
 
         {/* App Image */}
-        <div 
+        <div
+          id="appImg"
           className="
             my-2 mx-[20%]
             sm:w-1/2 sm:mx-0 sm:items-start

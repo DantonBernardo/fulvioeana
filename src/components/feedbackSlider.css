@@ -1,0 +1,49 @@
+/* Container fica suave */
+.slick-slide > div {
+  transition: all 0.4s ease;
+}
+
+/* Slides laterais */
+.slick-slide {
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: ease;
+}
+
+/* Slide central (principal) */
+.slick-center {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  filter: blur(0px) !important;
+}
+
+/* Slide realmente atual */
+.slick-current {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  margin-top: 20px;
+  font-size: 10px;        /* tamanho */
+  color: var(--color-neutral-500) !important; /* cor dos dots inativos */
+  opacity: 1 !important;  /* manter visível */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #9DE845 !important;  /* cor do dot ativo */
+  opacity: 1 !important;
+}
+
+@media (max-width: 600px) {
+  .slick-dots li button:before {
+    font-size: .4rem;
+  }
+}
+
+.slick-prev, .slick-next{
+  display: none !important;
+}
+
+.carousel-wrapper {
+  position: relative;
+}

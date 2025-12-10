@@ -67,7 +67,6 @@ export default function HeaderMobile({ index = 0 }) {
             className="
               text-white text-[25px]
               sm:text-[30px]
-              2xl:text-[60px]
             "
           />
         </button>

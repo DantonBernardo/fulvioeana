@@ -1,13 +1,46 @@
-import { about as aboutFulvio } from "../constants/fulvio";
-import { about as aboutAna } from "../constants/ana";
+import { about } from "../constants"
 import fulvioPhoto from '../assets/images/about/fulvio.png';
 import anaPhoto from '../assets/images/about/ana.png';
+
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(SplitText);
 
 export default function About({index = 0}){
   const bgColor = index === 0 ? '#F2F5F7' : '#1a1a1a';
   const textColor = index === 0 ? 'black' : 'white';
-  const aboutText = index === 0 ? aboutFulvio : aboutAna;
+  const aboutText = about[index];
   const photo = index === 0 ? fulvioPhoto : anaPhoto;
+
+  useGSAP(async() => {
+    const aboutSplit = new SplitText('#about h1', { type: "words" })
+    const aboutTextSplit = new SplitText('#about-paragraph', { type: "lines" })
+
+    const scrollTimeLine = gsap.timeline({
+      scrollTrigger:{
+        trigger: '#about',
+        start: 'top 80%'
+      }
+    })
+
+    scrollTimeLine
+      .from(aboutSplit.words, {
+        yPercent: 150,
+        duration: 1.5,
+        opacity: 0,
+        ease: "expo.out",
+        stagger: 0.02,
+      })
+      .from(aboutTextSplit.lines, {
+        yPercent: 150,
+        duration: 1.5,
+        opacity: 0,
+        ease: "expo.out",
+        stagger: 0.02,
+      })
+  })
 
   return(
     <section 
@@ -38,20 +71,24 @@ export default function About({index = 0}){
         sm:flex-row
       ">
         {/* Text */}
-        <div className="
-          w-full
-          sm:w-6/10
-        ">
-          <p 
-            dangerouslySetInnerHTML={{ __html: aboutText }} 
+        <div 
+          className="
+            w-full
+            sm:w-6/10
+          "
+        >
+          <p
+            id="about-paragraph"
             className="
               font-p font-thin 
               text-[3vw]
               sm:text-[.9rem]
               md:text-[1rem]
               lg:text-[1.5rem]
-              xl:text-[1.7rem]
-            "/>
+            "
+          >
+            {aboutText.text}
+          </p>
         </div>
 
         {/* Image */}

@@ -55,9 +55,9 @@ export default function Servicos({ index = 0}) {
 
   const navigate = useNavigate();
 
-  useGSAP(() => {
+  useGSAP(async() => {
     const titleSplit = SplitText.create('#servicos h1', {
-    type: 'words'
+      type: 'words'
     })
 
     const scrollTimeline = gsap.timeline({
@@ -68,12 +68,12 @@ export default function Servicos({ index = 0}) {
     })
     
     scrollTimeline
-    .from(titleSplit.words, {
-      opacity: 0, duration: 1, yPercent: 100, ease: 'expo.out', stagger: 0.02
-    })
-    .from('.test > div', {
-      opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.04,
-    }, '-=0.5')
+      .from(titleSplit.words, {
+        opacity: 0, duration: 1, yPercent: 100, ease: 'expo.out', stagger: 0.02
+      })
+      .from('.test > div', {
+        opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.04,
+      }, '-=0.5')
   })
 
   return (
